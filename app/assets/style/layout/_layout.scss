@@ -1,0 +1,129 @@
+//   hide-text
+@mixin hide-text {
+	text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+*{
+    outline: 1px solid #fff;
+}
+
+body{
+    font-size: 18px;
+    color: #fff;
+}
+
+p{
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    max-width: 1352px;
+}
+
+.navbar{
+    justify-content: space-between;
+    -expand-lg{
+        justify-content: space-between;
+    }
+}
+
+.logo{
+    width: 175px;
+    height: 42px;
+    // 為什麼圖片出不來？
+    background-image: url(../../../assets/images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    @include hide-text;    
+}
+
+.nav-link{
+    padding: 0;
+}
+
+.gradient-1{
+    height: 2px;
+    background-image: linear-gradient(to left, #09ACF5 50%, #62DB54 50%);
+}
+
+.footer{
+    p{
+        color: #909090;
+    }
+}
+
+
+.fs16{
+    font-size: 16px;
+}
+.fs18{
+    font-size: 18px;
+}
+.fs20{
+    font-size: 20px;
+}
+.fs26{
+    font-size: 26px;
+}
+.fs28{
+    font-size: 28px;
+}
+.fs32{
+    font-size: 32px;
+}
+.fs40{
+    font-size: 40px;
+}
+
+.fs48{
+    font-size: 48px;
+}
+.fs50{
+    font-size: 50px;
+}
+.fs104{
+    font-size: 104px;
+}
+
+.p28{
+padding: 28px;
+}
+.py128{
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.py52{
+    padding: 52px 0;
+}
+.py80{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.mb74{
+    margin-bottom: 74px;
+}
+.my80{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.ms80{
+    margin-left: 80px;
+}
+
+
+.rounded8{
+    border-radius: 8pt;
+}
+.rounded12{
+    border-radius: 12pt;
+}
+.rounded24{
+    border-radius: 24pt;
+}
