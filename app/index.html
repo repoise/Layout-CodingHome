@@ -1,5 +1,5 @@
 ---
-title: Boostrap Index
+title: Coding Home
 layout: ./app/layout.ejs
 engine: ejs
 current: index
@@ -35,8 +35,8 @@ current: index
     </div>
     <!-- 卡片 -->
     <div class="col-md-3">
-      <div class="card text-center">
-        <div class="card-body py-12">
+      <div class="card feature text-center">
+        <div class="card-body mask-1 py-12">
           <div class="card-img-top pb-6"><span class="material-icons fs50">
             code
             </span></div>
@@ -46,8 +46,8 @@ current: index
       </div>
     </div>
     <div class="col-md-3">
-      <div class="card text-center">
-        <div class="card-body py-12">
+      <div class="card feature text-center">
+        <div class="card-body mask-1 py-12">
           <div class="card-img-top pb-6"><span class="material-icons fs50">
             rocket_launch
             </span></div>
@@ -57,9 +57,9 @@ current: index
       </div>
     </div>
     <div class="col-md-3">
-      <div class="card text-center">
-        <div class="card-body py-12 border border-2 border-primary rounded12">
-          <div class="card-img-top pb-6"><span class="material-icons fs50 gradient-3">
+      <div class="card feature text-center">
+        <div class="card-body mask-1 py-12">
+          <div class="card-img-top pb-6"><span class="material-icons fs50">
             fmd_good
             </span></div>
           <h5 class="card-title mb-4 fw-bold">指定地點</h5>
@@ -159,13 +159,10 @@ current: index
         <h3 class="fs28 fw-bold lh-base mb-4">熱門推薦課程</h3>
         <div class="subtitle-line"></div>
       </div>
-
-
-    <div class="container">
+      
       <div class="row row-cols-1 row-cols-md-4 mb-12">
         <div class="col-md">
-          <a href="#" class="course-link">
-          <div class="card rounded24">
+          <div class="card course rounded24">
             <div class="d-flex flex-column align-items-center pt-6">
               <img src="./assets/images/teacher01.jpg" class="card-img-top rounded-circle course-img mb-2" alt="...">
               <p class="fs16">Belinda</p>
@@ -175,17 +172,14 @@ current: index
               <p class="card-text text-primary mb-2 fs16">前端語言</p>
               <p class="card-text fs16">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
             </div>
-            <!-- 該怎麼調顏色？ -->
             <hr class="mt-2 mb-0">
             <div class="px-6 text-center">
-              <p class="fs32 my-4"><span class="fs16 me-2">50分鐘</span>NT$1600</p>
+              <p class="fs32 my-4 font-monospace"><span class="fs16 me-2">50分鐘</span>NT$1600</p>
             </div>
           </div>
-          </a>
         </div>
         <div class="col-md">
-          <a href="#" class="course-link">
-            <div class="card rounded24">
+            <div class="card course rounded24">
               <div class="d-flex flex-column align-items-center pt-6">
                 <img src="./assets/images/teacher02.jpg" class="card-img-top rounded-circle course-img mb-2" alt="...">
                 <p class="fs16">Guava</p>
@@ -195,17 +189,15 @@ current: index
                 <p class="card-text text-primary mb-2 fs16">後端語言</p>
                 <p class="card-text fs16">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態...</p>
               </div>
-              <!-- 該怎麼調顏色？ -->
+
               <hr class="mt-2 mb-0">
               <div class="px-6 text-center">
-                <p class="fs32 my-4"><span class="fs16 me-2">50分鐘</span>NT$2200</p>
+                <p class="fs32 my-4 font-monospace"><span class="fs16 me-2">50分鐘</span>NT$2200</p>
               </div>
             </div>
-          </a>
         </div>
         <div class="col-md">
-          <a href="#" class="course-link">
-            <div class="card rounded24">
+            <div class="card course rounded24">
               <div class="d-flex flex-column align-items-center pt-6">
                 <img src="./assets/images/teacher03.jpg" class="card-img-top rounded-circle course-img mb-2" alt="...">
                 <p class="fs16">Joe</p>
@@ -215,17 +207,15 @@ current: index
                 <p class="card-text text-primary mb-2 fs16">行動應用開發</p>
                 <p class="card-text fs16">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡...</p>
               </div>
-              <!-- 該怎麼調顏色？ -->
+
               <hr class="mt-2 mb-0">
               <div class="px-6 text-center">
-                <p class="fs32 my-4"><span class="fs16 me-2">50分鐘</span>NT$1800</p>
+                <p class="fs32 my-4 font-monospace"><span class="fs16 me-2">50分鐘</span>NT$1800</p>
               </div>
             </div>
-          </a>
         </div>
         <div class="col-md">
-          <a href="#" class="course-link">
-            <div class="card rounded24">
+            <div class="card course rounded24">
               <div class="d-flex flex-column align-items-center pt-6">
                 <img src="./assets/images/teacher04.jpg" class="card-img-top rounded-circle course-img mb-2" alt="...">
                 <p class="fs16">Linda</p>
@@ -235,31 +225,37 @@ current: index
                 <p class="card-text text-primary mb-2 fs16">作業系統與伺服器</p>
                 <p class="card-text fs16">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
               </div>
-              <!-- 該怎麼調顏色？ -->
+
               <hr class="mt-2 mb-0">
               <div class="px-6 text-center">
-                <p class="fs32 my-4"><span class="fs16 me-2">50分鐘</span>NT$1100</p>
+                <p class="fs32 my-4 font-monospace"><span class="fs16 me-2">50分鐘</span>NT$1100</p>
               </div>
             </div>
-          </a>
         </div>
       </div>
       <div class="d-flex justify-content-center">
         <a href="#" class="btn btn-1 text-white fs18 py-2 px-8 rounded8">所有課程列表</a>
       </div>
-    
-    </div>
 
+  </div>
+</div>
+
+<!-- try again -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 px-0">
+
+    </div>
   </div>
 </div>
 
 <!-- info -->
 <div class="container-fluid">
   <div class="row info">
-    <div class="col-md-3 px-0">
-      <div class="info1 d-flex align-items-center h-100">
-        <div class="px-12">
-          <p class="mb-5"><span class="material-icons fs40 text-primary">
+    <div class="col-md-3 px-0 info1">
+      <div class=" mask-2 d-flex align-items-center h-100">
+        <div class="px-12 info-text">
+          <p class="mb-5"><span class="material-icons fs40">
             question_answer
             </span></p>
           <h3 class="card-title fs24 fw-bold mb-4">對症下藥，專案製作</h3>
@@ -268,10 +264,10 @@ current: index
         </div>
       </div>
     </div>
-    <div class="col-md-3 px-0">
-      <div class="info2 d-flex align-items-center h-100">
+    <div class="col-md-3 px-0 info2">
+      <div class="mask-2 d-flex align-items-center h-100">
         <div class="px-12">
-          <p class="mb-5"><span class="material-icons fs40 text-primary">
+          <p class="mb-5"><span class="material-icons fs40">
             tips_and_updates
             </span></p>
           <h3 class="card-title fs24 fw-bold mb-4">激發你的學習潛力</h3>
@@ -280,10 +276,10 @@ current: index
         </div>
       </div>
     </div>
-    <div class="col-md-3 px-0">
-      <div class="info3 d-flex align-items-center h-100">
+    <div class="col-md-3 px-0 info3">
+      <div class="mask-2 d-flex align-items-center h-100">
         <div class="px-12">
-          <p class="mb-5"><span class="material-icons fs40 text-primary">
+          <p class="mb-5"><span class="material-icons fs40">
             thumb_up
             </span></p>
           <h3 class="card-title fs24 fw-bold mb-4">學習效率</h3>
@@ -292,10 +288,10 @@ current: index
         </div>
       </div>
     </div>
-    <div class="col-md-3 px-0">
-      <div class="info4 d-flex align-items-center h-100">
+    <div class="col-md-3 px-0 info4">
+      <div class="mask-2 d-flex align-items-center h-100">
         <div class="px-12">
-          <p class="mb-5"><span class="material-icons fs40 text-primary">
+          <p class="mb-5"><span class="material-icons fs40">
             group
             </span></p>
           <h3 class="card-title fs24 fw-bold mb-4">一對一指導</h3>
@@ -320,7 +316,7 @@ current: index
     <!-- 文章卡片 -->
     <div class="row">
       <div class="col-md-4">
-        <div class="card p28 bg-transparent">
+        <div class="card article p28 bg-transparent">
           <img src="./assets/images/article01.jpg" class="card-img-top mb-4" alt="article01">
           <div class="card-body p-0">
             <h5 class="card-title fw-bold mb-4">2022 前端開發者學習地圖</h5>
@@ -328,11 +324,15 @@ current: index
             <div class="d-flex justify-content-end">
               <a href="#" class="text-primary">MORE</a>
             </div>
+            <div class="squareRounded squareRounded-topLeft position-absolute top-0 start-0"></div>
+            <div class="squareRounded squareRounded-topRight position-absolute top-0 end-0"></div>
+            <div class="squareRounded squareRounded-bottomLeft position-absolute bottom-0 start-0"></div>
+            <div class="squareRounded squareRounded-bottomRight position-absolute bottom-0 end-0"></div>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p28 bg-transparent">
+        <div class="card article p28 bg-transparent">
           <img src="./assets/images/article02.jpg" class="card-img-top mb-4" alt="article01">
           <div class="card-body p-0">
             <h5 class="card-title fw-bold mb-4">軟體工程師有哪些類別</h5>
@@ -340,11 +340,15 @@ current: index
             <div class="d-flex justify-content-end">
               <a href="#" class="text-primary">MORE</a>
             </div>
+            <div class="squareRounded squareRounded-topLeft position-absolute top-0 start-0"></div>
+            <div class="squareRounded squareRounded-topRight position-absolute top-0 end-0"></div>
+            <div class="squareRounded squareRounded-bottomLeft position-absolute bottom-0 start-0"></div>
+            <div class="squareRounded squareRounded-bottomRight position-absolute bottom-0 end-0"></div>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p28 bg-transparent">
+        <div class="card article p28 bg-transparent">
           <img src="./assets/images/article02.jpg" class="card-img-top mb-4" alt="article01">
           <div class="card-body p-0">
             <h5 class="card-title fw-bold mb-4">免費 25 小時前端教學資源</h5>
@@ -352,6 +356,10 @@ current: index
             <div class="d-flex justify-content-end">
               <a href="#" class="text-primary">MORE</a>
             </div>
+            <div class="squareRounded squareRounded-topLeft position-absolute top-0 start-0"></div>
+            <div class="squareRounded squareRounded-topRight position-absolute top-0 end-0"></div>
+            <div class="squareRounded squareRounded-bottomLeft position-absolute bottom-0 start-0"></div>
+            <div class="squareRounded squareRounded-bottomRight position-absolute bottom-0 end-0"></div>
           </div>
         </div>
       </div>
@@ -378,7 +386,7 @@ current: index
 <div class="container-fluid bg-dark py80">
 
   <div class="row justify-content-center">
-    <div class="col-md-10 d-flex bg-custom2 rounded24 align-items-center justify-content-between p-12">
+    <div class="col-md-9 d-flex bg-custom2 rounded24 align-items-center justify-content-between p-12">
       <div class="d-flex align-items-center">
         <span class="material-icons fs104 me-12">
           menu_book

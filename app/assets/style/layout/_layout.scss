@@ -5,15 +5,14 @@
     overflow: hidden;
 }
 
-*{
-    outline: 1px solid #fff;
-}
+// *{
+//     outline: 1px solid #fff;
+// }
 
 body{
     font-size: 18px;
     color: #fff;
 }
-
 p{
     margin-bottom: 0;
 }
@@ -21,15 +20,13 @@ a{
     text-decoration: none;
     color: #fff;
 }
+
 .container{
-    max-width: 1352px;
+    max-width: 1344px;
 }
 
 .navbar{
-    justify-content: space-between;
-    -expand-lg{
-        justify-content: space-between;
-    }
+    background-image: none;
 }
 
 .logo{
@@ -58,7 +55,9 @@ a{
     }
 }
 
-
+.fs12{
+    font-size: 12px;
+}
 .fs16{
     font-size: 16px;
 }
@@ -105,6 +104,15 @@ padding: 28px;
 .py80{
     padding-top: 80px;
     padding-bottom: 80px;
+}
+.pb80{
+    padding-bottom: 80px;
+}
+.-ms16{
+    margin-left: -16px;
+}
+.-me16{
+    margin-right: -16px;
 }
 .mb74{
     margin-bottom: 74px;
