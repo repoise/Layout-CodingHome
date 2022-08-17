@@ -49,6 +49,27 @@ a{
     background-image: linear-gradient(to left, #09ACF5 50%, #62DB54 50%);
 }
 
+// 登入
+.divider{
+    border-bottom: 1px solid $custom1;
+}
+.fblogin{
+    height: 24px;
+    width: 24px;
+    background-image: url(../images/icon_fb.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.googlelogin{
+    height: 24px;
+    width: 24px;
+    background-image: url(../images/icon_google.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .footer{
     p{
         color: #909090;
