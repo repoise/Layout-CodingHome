@@ -11,7 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -35,10 +40,51 @@
                 <a class="nav-link text-white mx-4" href="#">課程介紹</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white pe-0 ms-4" href="#"><span class="material-icons align-middle me-2">account_circle</span>登入</a>
+                <a class="nav-link text-white pe-0 ms-4 fs18" href="#" data-bs-toggle="modal" data-bs-target="#logIn"><span class="material-icons align-middle me-2">account_circle</span>登入</a>
               </li>
             </ul>
           </div>
+          
+          <!-- 登入 Modal -->
+          <div class="modal fade" id="logIn" tabindex="-1" aria-labelledby="logInLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                  <!-- 為什麼文字無法水平置中？ -->
+                  <h5 class="modal-title fs24 text-center" id="logInLabel">登入</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row justify-content-center">
+                      <div class="col-md-10 text-custom1">
+                        <div class="mb-6">
+                          <label for="userEmail" class="form-label fs16">信箱
+                          </label>
+                          <input type="mail" class="form-control border-2 py-2" id="userEmail" placeholder="請輸入信箱">
+                        </div>
+                        <div class="mb-6">
+                          <label for="userPassword" class="form-label fs16">密碼
+                          </label>
+                          <input type="password" class="form-control border-2 bg-black py-2" id="userPassword" placeholder="請輸入密碼">
+                        </div>
+                        <input type="submit"class="btn btn-1 w-100 mb-12 py-2" id="toLogIn" value="登入">
+
+                        <div class="divider mb-6">
+                          <p class="position-absolute translate-middle start-50 bg-custom2 fs16 px-4">其他登入方式</p>
+                        </div>
+                        <a href="#" class="btn fs16 border border-2 border-white text-center w-100 py-2 px-8 mb-6"> <div class="fblogin position-absolute"></div> Facebook 登入</a>
+                        <a href="#" class="btn fs16 border border-2 border-white text-center w-100 py-2 px-8 mb-6"><div class="googlelogin position-absolute"></div>Google 登入</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Button trigger modal -->
+
+
         </nav>
       </div>
       <div class="gradient-1"></div>
@@ -128,6 +174,7 @@
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 
 </html>
