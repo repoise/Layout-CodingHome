@@ -14848,7 +14848,7 @@ a {
 }
 
 .index-banner {
-  background-image: url();
+  background-image: url(../images/bg_home.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14953,19 +14953,19 @@ a {
 }
 
 .info1 {
-  background-image: url(../../../assets/images/info01.jpg);
+  background-image: url(../images/info01.jpg);
 }
 
 .info2 {
-  background-image: url(../../../assets/images/info02.jpg);
+  background-image: url(../images/info02.jpg);
 }
 
 .info3 {
-  background-image: url(../../../assets/images/info03.jpg);
+  background-image: url(../images/info03.jpg);
 }
 
 .info4 {
-  background-image: url(../../../assets/images/info04.jpg);
+  background-image: url(../images/info04.jpg);
 }
 
 .info span:hover {
@@ -15032,7 +15032,7 @@ a {
 
 .swipe-bg {
   height: calc(100vh);
-  background-image: url(../../../assets/images/bg_share.jpg);
+  background-image: url(../images/bg_share.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
