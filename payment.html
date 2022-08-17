@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Home 信用卡付款</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+  
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-custom2 py-6 bg-custom2">
+          <h1 class="mb-0">
+            <div class="navbar-brand logo"><a href="index.html">Codeing Home</a></div>
+          </h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="material-icons text-primary fs24">drag_handle</span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link pb-0 text-white mx-4" href="./index.html">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white mx-4" href="#">課程介紹</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white pe-0 ms-4" href="#"><span class="material-icons align-middle me-2">account_circle</span>登入</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="gradient-1"></div>
+      
+    </header>
+
+
+    <!-- progress + position value -->
+<div class="container-fluid bg-custom2">
+    <div class="row justify-content-center py-6">
+        <div class="col-md-8">
+            <div class="position-relative m-4 mb-8">
+                <div class="progress" style="height: 1px;">
+                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill fs12 text-white p-0" style="width: 20px; height:20px;">1</button>
+                <p class="position-absolute top-0 start-0 translate-middle mt-7 fs16 text-primary">課程報名</p>
+
+                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill fs12 text-white p-0" style="width: 20px; height:20px;">2</button>
+                <p class="position-absolute top-0 start-50 translate-middle mt-7 fs16 text-primary">信用卡付款</p>
+
+                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-custom2 border rounded-pill fs12 text-white p-0" style="width: 20px; height:20px;">3</button>
+                <p class="position-absolute top-0 start-100 translate-middle mt-7 fs16">付款成功</p>
+              </div>
+        </div>
+    </div>
+</div>
+<!-- try again：負數margin去推文字位置 還是很怪... -->
+<!-- <div class="container-fluid bg-custom2">
+    <div class="row justify-content-center py-6">
+        <div class="col-md-8">
+            <div class="position-relative m-4">
+                <div class="progress" style="height: 1px;">
+                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill fs12 text-white p-0" style="width: 20px; height:20px;">1</button>
+                
+                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill fs12 text-white p-0" style="width: 20px; height:20px;">2</button>
+                
+                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-custom2 rounded-pill fs12 text-white p-0" style="width: 20px; height:20px;">3</button>
+            </div>
+            <div class="d-flex justify-content-between fs16">
+                <p class="-ms16 text-primary">課程報名</p>
+                <p class="text-primary">信用卡付款</p>
+                <p class="-me16">付款成功</p>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- form control -->
+<div class="container-fluid bg-dark pt-12 pb80">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body px-8 py-12">
+                    <h2 class="card-title fw-bold fs24 text-center mb-12">信用卡付款</h2>
+                    <p class="card-text fw-bold mb-6">請輸入信用卡資訊進行付款</p>
+                    <div class="mb-6">
+                        <label for="creditcardPayment" class="form-label fs16">信用卡帳號</label>
+                        <input type="text" class="form-control border-2" id="creditcardPayment" placeholder="xxxx-xxxx-xxxx-xxxx">
+                    </div>
+                    <div class="mb-6">
+                        <label for="creditcardPassword" class="form-label fs16">安全碼</label>
+                        <input type="password" class="form-control border-2" id="creditcardPassword" placeholder="***">
+                    </div>
+                    <div class="mb-6">
+                        <label for="creditcardDate" class="form-label fs16">有效日期</label>
+                        <input type="month" class="form-control border-2" id="creditcardDate" placeholder="(MM/YY)">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="font-monospace">NT$1600</p>
+                        <a href="#" class="btn btn-1 py-2 px-12">下一步</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="footer">
+      <div class="container-fluid text-white bg-custom3 font-monospace">
+        <p class="text-center py-6 mb-0">Coding Home © 2022 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
