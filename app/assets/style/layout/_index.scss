@@ -10,6 +10,7 @@
   }
   h2{
     margin-bottom: 0;
+
   }
   .slogan{
     font-size: 48px;
@@ -60,24 +61,27 @@
   }
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.swiper-slide {
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+.code-swiper{
+  .swiper {
+  width: auto;
+  height: auto;
+  }
+  .swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
 }
 
 .course{
@@ -176,10 +180,74 @@
 }
 
 
-.swipe-bg{
-  height: calc(100vh);
+.review-bg{
+  // height: calc(100vh);
+  height: 800px;
   background-image: url(../images/bg_share.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
+.review-img{
+  margin-bottom: 48px;
+  // object-fit: cover;
+  // width: 100%;
+  // height: 100%;
+}
+
+// 不明白為什麼要加上absolube
+.decor-frame{
+  // position: absolute;
+  &::after {
+    content: "";
+    display: block;
+    border: 1px solid $white;
+    border-radius: 24pt;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    left: -16px;
+    top: 16px;
+    // 沒有依照圖片的大小
+  }
+}
+.rounded-review-content{
+  border-top-left-radius: 24pt;
+  border-top-right-radius: 24pt;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 24pt;
+  margin-left: -48px;
+  // 響應式該怎麼改？
+}
+.swiper{
+  height: 100%;
+  width: 100%;
+}
+.review-swiper{
+  .review-student{
+    width: 100px;
+    height: 100px;
+  }
+  .swiper-buttons{
+    position: absolute;
+    bottom:0;
+  }
+
+  .swiper-button-prev:after, .swiper-button-next:after {
+    content: '';
+  }
+  .swiper-pagination{
+
+    width: auto;
+  }
+  .swiper-pagination-bullet{
+    background-color: $primary;
+    opacity: initial;
+    &-active{
+      width: 16px;
+      border-radius: 25px;
+    }
+  }
+}
+

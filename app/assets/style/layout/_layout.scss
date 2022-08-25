@@ -32,8 +32,8 @@ a{
 .logo{
     width: 175px;
     height: 42px;
-    // 為什麼圖片出不來？
-    background-image: url(../../../assets/images/logo.svg);
+    // 為什麼圖片出不來？路徑需要以dist中的all.css去考量
+    background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -76,31 +76,8 @@ a{
     }
 }
 
-.fs12{
-    font-size: 12px;
-}
-.fs16{
-    font-size: 16px;
-}
-.fs18{
-    font-size: 18px;
-}
-.fs20{
-    font-size: 20px;
-}
-.fs26{
-    font-size: 26px;
-}
-.fs28{
-    font-size: 28px;
-}
-.fs32{
-    font-size: 32px;
-}
-.fs40{
-    font-size: 40px;
-}
 
+// font-size
 .fs48{
     font-size: 48px;
 }
@@ -134,6 +111,13 @@ padding: 28px;
 }
 .-me16{
     margin-right: -16px;
+}
+.pe50
+{
+    padding-right: 50px;
+}
+.-mb24{
+    margin-bottom: -24px;
 }
 .mb74{
     margin-bottom: 74px;
