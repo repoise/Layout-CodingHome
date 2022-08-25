@@ -11,12 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
-    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -26,21 +23,21 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg bg-custom2 py-6 bg-custom2">
           <h1 class="mb-0">
-            <div class="navbar-brand logo"><a href="index.html">Codeing Home</a></div>
+            <div class="navbar-brand logo"><a href="./index.html">Codeing Home</a></div>
           </h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="material-icons text-primary fs24">drag_handle</span>
+            <span class="material-icons text-primary fs-4">drag_handle</span>
           </button>
-          <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse justify-content-md-end justify-content-center" id="navbarNav">
+            <ul class="navbar-nav bg-custom2 mt-md-0 mt-6 mb-md-0 -mb24">
               <li class="nav-item">
-                <a class="nav-link pb-0 text-white mx-4" href="./index.html">首頁</a>
+                <a class="nav-link pb-mb-0 text-white mx-md-4 py-md-0 py-3 text-center" href="./index.html">首頁</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white mx-4" href="#">課程介紹</a>
+                <a class="nav-link text-white mx-md-4 py-md-0 py-3 text-center" href="./courses.html">課程介紹</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white pe-0 ms-4 fs18" href="#" data-bs-toggle="modal" data-bs-target="#logIn"><span class="material-icons align-middle me-2">account_circle</span>登入</a>
+                <a class="nav-link text-white pe-md-0 ms-md-4 py-md-0 py-3 fs-7 text-center" href="#" data-bs-toggle="modal" data-bs-target="#logIn"><span class="material-icons align-middle me-2">account_circle</span>登入</a>
               </li>
             </ul>
           </div>
@@ -51,7 +48,7 @@
               <div class="modal-content">
                 <div class="modal-header border-bottom-0">
                   <!-- 為什麼文字無法水平置中？ -->
-                  <h5 class="modal-title fs24 text-center" id="logInLabel">登入</h5>
+                  <h5 class="modal-title fs-4 text-center" id="logInLabel">登入</h5>
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -59,22 +56,22 @@
                     <div class="row justify-content-center">
                       <div class="col-md-10 text-custom1">
                         <div class="mb-6">
-                          <label for="userEmail" class="form-label fs16">信箱
+                          <label for="userEmail" class="form-label fs-8">信箱
                           </label>
                           <input type="mail" class="form-control border-2 py-2" id="userEmail" placeholder="請輸入信箱">
                         </div>
                         <div class="mb-6">
-                          <label for="userPassword" class="form-label fs16">密碼
+                          <label for="userPassword" class="form-label fs-8">密碼
                           </label>
                           <input type="password" class="form-control border-2 bg-black py-2" id="userPassword" placeholder="請輸入密碼">
                         </div>
                         <input type="submit"class="btn btn-1 w-100 mb-12 py-2" id="toLogIn" value="登入">
 
                         <div class="divider mb-6">
-                          <p class="position-absolute translate-middle start-50 bg-custom2 fs16 px-4">其他登入方式</p>
+                          <p class="position-absolute translate-middle start-50 bg-custom2 fs-8 px-4">其他登入方式</p>
                         </div>
-                        <a href="#" class="btn fs16 border border-2 border-white text-center w-100 py-2 px-8 mb-6"> <div class="fblogin position-absolute"></div> Facebook 登入</a>
-                        <a href="#" class="btn fs16 border border-2 border-white text-center w-100 py-2 px-8 mb-6"><div class="googlelogin position-absolute"></div>Google 登入</a>
+                        <a href="#" class="btn fs-8 border border-2 border-white text-center w-100 py-2 px-8 mb-6"> <div class="fblogin position-absolute"></div> Facebook 登入</a>
+                        <a href="#" class="btn fs-8 border border-2 border-white text-center w-100 py-2 px-8 mb-6"><div class="googlelogin position-absolute"></div>Google 登入</a>
                       </div>
                     </div>
                   </div>
@@ -82,9 +79,6 @@
               </div>
             </div>
           </div>
-          <!-- Button trigger modal -->
-
-
         </nav>
       </div>
       <div class="gradient-1"></div>
@@ -100,14 +94,14 @@
                 <div class="progress" style="height: 1px;">
                   <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill fs12 text-white p-0" style="width: 20px; height:20px;">1</button>
-                <p class="position-absolute top-0 start-0 translate-middle mt-7 fs16 text-primary">課程報名</p>
+                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill fs-10 text-white p-0" style="width: 20px; height:20px;">1</button>
+                <p class="position-absolute top-0 start-0 translate-middle mt-7 fs-8 text-primary">課程報名</p>
 
-                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill fs12 text-white p-0" style="width: 20px; height:20px;">2</button>
-                <p class="position-absolute top-0 start-50 translate-middle mt-7 fs16 text-primary">信用卡付款</p>
+                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill fs-10 text-white p-0" style="width: 20px; height:20px;">2</button>
+                <p class="position-absolute top-0 start-50 translate-middle mt-7 fs-8 text-primary">信用卡付款</p>
 
-                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-custom2 border rounded-pill fs12 text-white p-0" style="width: 20px; height:20px;">3</button>
-                <p class="position-absolute top-0 start-100 translate-middle mt-7 fs16">付款成功</p>
+                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-custom2 border rounded-pill fs-10 text-white p-0" style="width: 20px; height:20px;">3</button>
+                <p class="position-absolute top-0 start-100 translate-middle mt-7 fs-8">付款成功</p>
               </div>
         </div>
     </div>
@@ -120,13 +114,13 @@
                 <div class="progress" style="height: 1px;">
                   <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill fs12 text-white p-0" style="width: 20px; height:20px;">1</button>
+                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill fs-10 text-white p-0" style="width: 20px; height:20px;">1</button>
                 
-                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill fs12 text-white p-0" style="width: 20px; height:20px;">2</button>
+                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill fs-10 text-white p-0" style="width: 20px; height:20px;">2</button>
                 
-                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-custom2 rounded-pill fs12 text-white p-0" style="width: 20px; height:20px;">3</button>
+                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-custom2 rounded-pill fs-10 text-white p-0" style="width: 20px; height:20px;">3</button>
             </div>
-            <div class="d-flex justify-content-between fs16">
+            <div class="d-flex justify-content-between fs-8">
                 <p class="-ms16 text-primary">課程報名</p>
                 <p class="text-primary">信用卡付款</p>
                 <p class="-me16">付款成功</p>
@@ -141,18 +135,18 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body px-8 py-12">
-                    <h2 class="card-title fw-bold fs24 text-center mb-12">信用卡付款</h2>
+                    <h2 class="card-title fw-bold fs-4 text-center mb-12">信用卡付款</h2>
                     <p class="card-text fw-bold mb-6">請輸入信用卡資訊進行付款</p>
                     <div class="mb-6">
-                        <label for="creditcardPayment" class="form-label fs16">信用卡帳號</label>
+                        <label for="creditcardPayment" class="form-label fs-8">信用卡帳號</label>
                         <input type="text" class="form-control border-2" id="creditcardPayment" placeholder="xxxx-xxxx-xxxx-xxxx">
                     </div>
                     <div class="mb-6">
-                        <label for="creditcardPassword" class="form-label fs16">安全碼</label>
+                        <label for="creditcardPassword" class="form-label fs-8">安全碼</label>
                         <input type="password" class="form-control border-2" id="creditcardPassword" placeholder="***">
                     </div>
                     <div class="mb-6">
-                        <label for="creditcardDate" class="form-label fs16">有效日期</label>
+                        <label for="creditcardDate" class="form-label fs-8">有效日期</label>
                         <input type="month" class="form-control border-2" id="creditcardDate" placeholder="(MM/YY)">
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
@@ -172,9 +166,12 @@
       </div>
     </footer>
 
+    <!-- 須注意載入順序！ -->
     <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/all.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
   </body>
 
 </html>

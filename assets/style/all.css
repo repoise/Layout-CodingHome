@@ -9746,11 +9746,27 @@ fieldset:disabled .btn {
 }
 
 .fs-5 {
-  font-size: 1.25rem !important;
+  font-size: calc(1.2625rem + 0.15vw) !important;
 }
 
 .fs-6 {
+  font-size: 1.25rem !important;
+}
+
+.fs-7 {
+  font-size: 1.125rem !important;
+}
+
+.fs-8 {
   font-size: 1rem !important;
+}
+
+.fs-9 {
+  font-size: 0.875rem !important;
+}
+
+.fs-10 {
+  font-size: 0.75rem !important;
 }
 
 .fst-italic {
@@ -14662,6 +14678,9 @@ fieldset:disabled .btn {
   .fs-4 {
     font-size: 1.5rem !important;
   }
+  .fs-5 {
+    font-size: 1.375rem !important;
+  }
 }
 
 @media print {
@@ -14726,7 +14745,7 @@ a {
 .logo {
   width: 175px;
   height: 42px;
-  background-image: url(../../../assets/images/logo.svg);
+  background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -14772,38 +14791,6 @@ a {
   color: #909090;
 }
 
-.fs12 {
-  font-size: 12px;
-}
-
-.fs16 {
-  font-size: 16px;
-}
-
-.fs18 {
-  font-size: 18px;
-}
-
-.fs20 {
-  font-size: 20px;
-}
-
-.fs26 {
-  font-size: 26px;
-}
-
-.fs28 {
-  font-size: 28px;
-}
-
-.fs32 {
-  font-size: 32px;
-}
-
-.fs40 {
-  font-size: 40px;
-}
-
 .fs48 {
   font-size: 48px;
 }
@@ -14844,6 +14831,14 @@ a {
 
 .-me16 {
   margin-right: -16px;
+}
+
+.pe50 {
+  padding-right: 50px;
+}
+
+.-mb24 {
+  margin-bottom: -24px;
 }
 
 .mb74 {
@@ -14943,12 +14938,12 @@ a {
   color: transparent;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
+.code-swiper .swiper {
+  width: auto;
+  height: auto;
 }
 
-.swiper-slide {
+.code-swiper .swiper-slide {
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15068,12 +15063,75 @@ a {
   display: block;
 }
 
-.swipe-bg {
-  height: calc(100vh);
+.review-bg {
+  height: 800px;
   background-image: url(../images/bg_share.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.review-img {
+  margin-bottom: 48px;
+}
+
+.decor-frame::after {
+  content: "";
+  display: block;
+  border: 1px solid #fff;
+  border-radius: 24pt;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: -16px;
+  top: 16px;
+}
+
+.rounded-review-content {
+  border-top-left-radius: 24pt;
+  border-top-right-radius: 24pt;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 24pt;
+  margin-left: -48px;
+}
+
+.swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.review-swiper .review-student {
+  width: 100px;
+  height: 100px;
+}
+
+.review-swiper .swiper-buttons {
+  position: absolute;
+  bottom: 0;
+}
+
+.review-swiper .swiper-button-prev:after, .review-swiper .swiper-button-next:after {
+  content: '';
+}
+
+.review-swiper .swiper-pagination {
+  width: auto;
+}
+
+.review-swiper .swiper-pagination-bullet {
+  background-color: #62DB54;
+  opacity: initial;
+}
+
+.review-swiper .swiper-pagination-bullet-active {
+  width: 16px;
+  border-radius: 25px;
+}
+
+.course-info:hover {
+  color: #62DB54;
+  border: 2px solid #09acf5;
 }
 
 /*# sourceMappingURL=all.css.map */
