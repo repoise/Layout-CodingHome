@@ -5,8 +5,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 92px);
+  @include pad(){
+    height: 336px;
+    background-position: right center;
+  }
   .row{
     height: calc(100vh - 92px);
+    @include pad() {
+      height: 336px;
+    }
   }
   h2{
     margin-bottom: 0;
@@ -14,6 +21,14 @@
   }
   .slogan{
     font-size: 48px;
+    @include pad() {
+      font-size: 24px;
+    }
+  }
+  p{
+    @include pad() {
+      font-size: 14px;
+    }
   }
   .icon1{
     width: 10px;
@@ -39,11 +54,25 @@
 
 .feature{
   border: 2px solid transparent;
+  @include pad() {
+    background-color: $black;
+    border-radius: 12pt;
+  }
   .mask-1{
     background-color: $black;
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0.5;
+    @include pad() {
+      opacity: 1;
+    }
+  }
+  span{
+    @include pad() {
+      background: linear-gradient(180deg,#09ACF5 35% , $primary 75%);
+      background-clip: text;
+      color: transparent;
+    }
   }
   &:hover{
     border: 2px solid $primary;
@@ -122,8 +151,21 @@
   &4{
     background-image: url(../images/info04.jpg);
   }
+  @include pad(){
+    height: auto;
+  }
   span{
     &:hover{
+      color: $primary;
+    }
+  }
+}
+.info-text{
+  @include pad(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span{
       color: $primary;
     }
   }
@@ -133,6 +175,9 @@
   background-color: rgba(0,0,0,0.5);
   .subtitle-line{
     background-color: $white;
+    @include pad(){
+      background-color: $primary;
+    }
   }
   &:hover{
     background-color: transparent;
@@ -187,6 +232,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  @include pad() {
+   background-image: none;
+   background-color:  $black;
+  }
 }
 .review-img{
   margin-bottom: 48px;
@@ -250,4 +299,6 @@
     }
   }
 }
+
+
 

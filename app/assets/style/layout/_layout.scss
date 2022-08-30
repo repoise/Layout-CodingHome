@@ -73,6 +73,9 @@ a{
 .footer{
     p{
         color: #909090;
+        @include pad(){
+            font-size: 12px;
+        }
     }
 }
 
@@ -88,6 +91,7 @@ a{
     font-size: 104px;
 }
 
+
 .p28{
 padding: 28px;
 }
@@ -102,6 +106,10 @@ padding: 28px;
 .py80{
     padding-top: 80px;
     padding-bottom: 80px;
+    @include pad(){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 .pb80{
     padding-bottom: 80px;
