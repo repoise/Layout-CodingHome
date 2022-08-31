@@ -1,0 +1,45 @@
+.progress{
+    height: 2px;
+
+}
+
+.timeline-pointer{
+    position: relative;
+    p{
+        color: $white;
+        &.active{
+            color: $primary;
+        }
+    }
+    &::before{
+        position: absolute;
+        //讓圓圈位移到欄位中間
+        left: 50%;
+        //讓錨點位移到圓圈中心
+        transform: translateX(-50%);
+        width: 20px;
+        height: 20px;
+        border: 1px solid $white;
+        border-radius: 50%;
+        background-color: $custom2;
+        font-size: 12px;
+        z-index: 1;
+    }
+    &.step-1::before {
+        content: '1';
+      }
+    &.step-2::before {
+    content: '2';
+    }
+    &.step-3::before {
+    content: '3';
+    }
+    &.active {
+    color: $primary;
+    &::before {
+        color: $white;  
+        background-color: $primary;
+        border-color: $primary;
+      }
+    }
+}
