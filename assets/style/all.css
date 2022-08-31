@@ -14850,6 +14850,10 @@ a {
   padding-right: 50px;
 }
 
+.-mt10 {
+  margin-top: -10px;
+}
+
 .-mb24 {
   margin-bottom: -24px;
 }
@@ -15231,6 +15235,59 @@ a {
 .course-info:hover {
   color: #62DB54;
   border: 2px solid #09acf5;
+}
+
+.progress {
+  height: 2px;
+}
+
+.timeline-pointer {
+  position: relative;
+}
+
+.timeline-pointer p {
+  color: #fff;
+}
+
+.timeline-pointer p.active {
+  color: #62DB54;
+}
+
+.timeline-pointer::before {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: #2D2D2D;
+  font-size: 12px;
+  z-index: 1;
+}
+
+.timeline-pointer.step-1::before {
+  content: '1';
+}
+
+.timeline-pointer.step-2::before {
+  content: '2';
+}
+
+.timeline-pointer.step-3::before {
+  content: '3';
+}
+
+.timeline-pointer.active {
+  color: #62DB54;
+}
+
+.timeline-pointer.active::before {
+  color: #fff;
+  background-color: #62DB54;
+  border-color: #62DB54;
 }
 
 /*# sourceMappingURL=all.css.map */

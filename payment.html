@@ -86,48 +86,36 @@
     </header>
 
 
-    <!-- progress + position value -->
+    <!-- 進度條 -->
 <div class="container-fluid bg-custom2">
-    <div class="row justify-content-center py-6">
-        <div class="col-md-8">
-            <div class="position-relative m-4 mb-8">
-                <div class="progress" style="height: 1px;">
-                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill fs-10 text-white p-0" style="width: 20px; height:20px;">1</button>
-                <p class="position-absolute top-0 start-0 translate-middle mt-7 fs-8 text-primary">課程報名</p>
-
-                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill fs-10 text-white p-0" style="width: 20px; height:20px;">2</button>
-                <p class="position-absolute top-0 start-50 translate-middle mt-7 fs-8 text-primary">信用卡付款</p>
-
-                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-custom2 border rounded-pill fs-10 text-white p-0" style="width: 20px; height:20px;">3</button>
-                <p class="position-absolute top-0 start-100 translate-middle mt-7 fs-8">付款成功</p>
+    <!-- progress -->
+    <div class="row justify-content-center pt-6">
+        <div class="col-md-7 col-9 px-0">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 圖示123(偽元素) + 文字說明 -->
+    <div class="row pb-4 -mt10">
+        <!-- 欄位分配 平板以上5/2/5 平板以下3/6/3，圖示樣式timeline-pointer，個別設定step1,2,3-->
+        <div class="col-md-5 col-3">
+            <div class="timeline-pointer text-center step-1 active">
+                <p class="pt-6 fs-8 active">課程報名</p>
+              </div>
+        </div>
+        <div class="col-md-2 col-6">
+            <div class="timeline-pointer text-center step-2 active">
+                <p class="pt-6 fs-8 active">信用卡付款</p>
+              </div>
+        </div>
+        <div class="col-md-5 col-3">
+            <div class="timeline-pointer text-center step-3">
+                <p class="pt-6 fs-8">付款成功</p>
               </div>
         </div>
     </div>
 </div>
-<!-- try again：負數margin去推文字位置 還是很怪... -->
-<!-- <div class="container-fluid bg-custom2">
-    <div class="row justify-content-center py-6">
-        <div class="col-md-8">
-            <div class="position-relative m-4">
-                <div class="progress" style="height: 1px;">
-                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill fs-10 text-white p-0" style="width: 20px; height:20px;">1</button>
-                
-                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill fs-10 text-white p-0" style="width: 20px; height:20px;">2</button>
-                
-                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-custom2 rounded-pill fs-10 text-white p-0" style="width: 20px; height:20px;">3</button>
-            </div>
-            <div class="d-flex justify-content-between fs-8">
-                <p class="-ms16 text-primary">課程報名</p>
-                <p class="text-primary">信用卡付款</p>
-                <p class="-me16">付款成功</p>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <!-- form control -->
 <div class="container-fluid bg-dark pt-12 pb80">
